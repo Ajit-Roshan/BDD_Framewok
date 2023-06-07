@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -37,6 +38,7 @@ public class StepDefinitions {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
 		
+		System.out.println("input is :: "+string);
 		dr.findElement(By.name("q")).sendKeys(string);
 	}
 
@@ -47,15 +49,8 @@ public class StepDefinitions {
 		
 		dr.findElement(By.name("q")).sendKeys(Keys.RETURN);
 	}
-	
-	@Then("wait for 3seconds")
-	public void wait_for_3seconds() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-		
-		Thread.sleep(3000);
-	}
-	@Then("close the started tab")
+
+	@And("close the started tab")
 	public void close_the_started_tab() {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
