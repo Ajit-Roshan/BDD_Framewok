@@ -1,0 +1,16 @@
+Feature: to cheack the background keyword
+
+  Background: 
+    Given when the browser is open
+    Then user enter the url ="https://www.google.com"
+    And user is in the google search page
+
+  @s1
+  Scenario: 
+    Then user enter the data need to be searched "odisha"
+    And press enter
+
+  @s2
+  Scenario: 
+    Then user enter the data need to be searched "jarkhand"
+    And press enter

@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"Features"}
 				, glue = {"stepDefinitions"} 
-				,tags = "not @smokeOR" ,dryRun = false
+				 ,dryRun = false
 			)
 
 public class TestRunner {
