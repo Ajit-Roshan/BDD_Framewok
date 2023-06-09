@@ -1,4 +1,4 @@
-package runner_r1;
+package r2_;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
